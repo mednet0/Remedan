@@ -1,0 +1,50 @@
+/* Apply a deep blue night sky background */
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at bottom, #010a29 30%, #2a3d66 70%);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Create a glowing moon effect */
+.moon {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, #ffffff 30%, rgba(255, 255, 255, 0.2) 70%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+}
+
+/* Centered container */
+.container {
+    width: 100%;
+    max-width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Large text styling */
+h1 {
+    font-size: 8vw; /* Adjusts based on screen size */
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+p {
+    font-size: 5vw; /* Responsive font size */
+    font-weight: 500;
+    margin-top: 10px;
+}
